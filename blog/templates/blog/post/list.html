@@ -8,12 +8,13 @@
     <div class="row">
 
 <div class="col-md-4">
+    <div class="animated zoomInLeft">
 <!--Card-->
 <div class="card card-cascade wider">
 
     <!--Card image-->
     <div class="view overlay hm-white-slight">
-        <img src="{{ post.image.url }}" class="img-fluid" alt="">
+        <img src="{{ post.image_dog.url }}" class="img-fluid" alt="{{ post.alt_image }}">
         <a>
             <div class="mask">ddddd</div>
         </a>
@@ -23,29 +24,15 @@
     <!--Card content-->
     <div class="card-block text-xs-center">
         <!--Category & Title-->
-        <h4><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h4>
-        {% if tag %}
-        <h4 class="card-title"><strong><a href="">Posts tagged with "{{ tag.name }}"</a></strong></h4>
-        {% endif %}
-    <p class="tags">
-            Tags:
-            {% for tag in post.tags.all %}
-                <a href="{% url "blog:post_list_by_tag" tag.slug %}">{{ tag.name }}</a>
-                {% if not forloop.last %}, {% endif %}
-            {% endfor %}
-        </p>
-
+        <h4><a href="{{ post.get_absolute_url }}">Мысли Великих</a></h4>
         <!--Description-->
-        <p class="card-text">Published {{ post.publish }} by {{ post.author }}</p>
-       {{ post.body|markdown|truncatewords_html:5 }}
-
-
-
+        <p class="card-text">{{ post.citata }}</p>
     <!--/.Card content-->
 </div>
 </div>
 
 
+</div>
 </div>
     <div class="col-md-4">
     <div class="embed-responsive embed-responsive-16by9">
@@ -54,10 +41,11 @@
 
 <!--Panel-->
 <div class="card card-block">
-    <h4 class="card-title">Анекдот дня</h4>
-    <p class="card-text">{{ post.bodyone }}</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    <h5 class="card-title">Анекдот дня</h5>
+    <p class="card-text">{{ post.anecdot }}</p>
+
+    <a href="#" class="card-link">MyProjectGallery</a>
+    <a href="#" class="card-link">Моя ГаллереяПроектов</a>
 </div>
 <!--/.Panel-->
 
@@ -65,11 +53,12 @@
 <!--/.Card-->
     <div class="col-md-4">
     <!--Card-->
+    <div class="animated zoomInRight">
 <div class="card card-cascade wider">
 
     <!--Card image-->
     <div class="view overlay hm-white-slight">
-        <img src="{{ post.imageone.url }}" class="img-fluid" alt="">
+        <img src="{{ post.image.url }}" class="img-fluid" alt="{{ post.alt_image_dog }}">
         <a>
             <div class="mask">ddddd</div>
         </a>
@@ -81,19 +70,24 @@
         <!--Category & Title-->
         <h4><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h4>
         {% if tag %}
-        <h4 class="card-title"><strong><a href="">Posts tagged with "{{ tag.name }}"</a></strong></h4>
+        <h4 class="card-title"><strong><a href=""></a></strong></h4>
         {% endif %}
     <p class="tags">
-            Tags:
+
             {% for tag in post.tags.all %}
-                <a href="{% url "blog:post_list_by_tag" tag.slug %}">{{ tag.name }}</a>
+                <a href="{% url "blog:post_list_by_tag" tag.slug %}"></a>
                 {% if not forloop.last %}, {% endif %}
             {% endfor %}
         </p>
-
+         <a href="{{ post.get_absolute_url }}">{{ post.body|markdown|truncatewords_html:10 }}</a>
         <!--Description-->
-        <p class="card-text">Published {{ post.publish }} by {{ post.author }}</p>
-       {{ post.bodyone|markdown|truncatewords_html:5 }}
+
+<div class="chip">
+    <img src="http://mdbootstrap.com/images/avatars/img%20(3).jpg" alt="Contact Person">
+
+
+        <small class="text-muted"><em> {{ post.publish }} by {{ post.author }}</em></small>
+</div>
 
 
 
@@ -103,6 +97,7 @@
 
 
 </div>
+    </div>
     </div>
 {% endfor%}
 

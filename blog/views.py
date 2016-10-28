@@ -76,6 +76,8 @@ def post_detail(request, year, month, day, post):
 
 
 
+
+
 def post_share(request, post_id):
     # Retrieve post by id
     post = get_object_or_404(Post, id=post_id, status='published')
@@ -115,3 +117,7 @@ def post_search(request):
                                                      'cd': cd,
                                                      'results': results,
                                                      'total_results': total_results})
+
+
+def post_portfolio(request):
+    return render(request, 'blog/post/portfolio.html')

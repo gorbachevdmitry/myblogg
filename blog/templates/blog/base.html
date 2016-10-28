@@ -9,7 +9,7 @@
     {% load blog_tags %}
     {% load staticfiles %}
 
-    <title>Material Design Bootstrap Template</title>
+    <title>{% block title %}{% endblock %}</title>
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -148,26 +148,19 @@
 
         <!-- Breadcrumb-->
         <div class="breadcrumb-dn">
-            <p>MDB Blog Home Page</p>
+            <p></p>
         </div>
 
 
         <ul class="nav navbar-nav pull-right">
 
-            <li class="nav-item ">
-                <a class="nav-link"> <span class="label red z-depth-1">2</span> <i class="fa fa-shopping-cart"></i> <span class="hidden-sm-down">Cart</span></a>
-            </li>
+
             <li class="nav-item ">
                 <a class="nav-link"><i class="fa fa-envelope"></i> <span class="hidden-sm-down">Contact</span></a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link"><i class="fa fa-comments-o"></i> <span class="hidden-sm-down">Support</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link"><i class="fa fa-sign-in"></i> <span class="hidden-sm-down">Register</span></a>
-            </li>
+
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> <span class="hidden-sm-down">Profile</span></a>
+                <a class="nav-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> <span class="hidden-sm-down">Projects</span></a>
                 <div class="dropdown-menu dropdown-primary dd-right" aria-labelledby="dropdownMenu1" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                     <a class="dropdown-item" href="#">Logout</a>
                     <a class="dropdown-item" href="#">My account</a>
@@ -207,7 +200,7 @@
                 <li><a href="" target="_blank" class="btn-floating btn-small btn-li"><i class="fa fa-linkedin"> </i></a></li>
 
                 <li><a href="" target="_blank" class="btn-floating btn-small btn-pin"><i class="fa fa-pinterest"> </i></a></li>
-                <li><a href="" target="_blank" class="btn-floating btn-small btn-ins"><i class="fa fa-instagram"> </i></a></li>
+
             </ul>
         </div>
         <!--/.Social buttons-->
@@ -215,7 +208,7 @@
         <!--Copyright-->
         <div class="footer-copyright">
             <div class="container-fluid">
-                © 2015 Copyright: <a href=""> DmitryGorbachev.com </a>
+                © 2015 Copyright: <a href="">DmitryGorbachev.com </a>
 
             </div>
         </div>

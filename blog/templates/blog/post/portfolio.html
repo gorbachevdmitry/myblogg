@@ -1,0 +1,244 @@
+{% extends "blog/base.html" %}
+{% load blog_tags %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+
+
+<!--Card-->
+<div class="card testimonial-card">
+
+    <!--Bacground color-->
+    <div class="card-up default-color-dark">
+    </div>
+
+    <!--Avatar-->
+    <div class="avatar"><img src="{% static 'img/myphotos/2016-10-28-144519.jpg' %}">
+    </div>
+
+    <div class="card-block">
+        <!--Name-->
+        <h4 class="card-title">Anna Doe</h4>
+        <hr>
+        <!--Quotation-->
+        <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+         <hr class="between-sections">
+
+            <!--Section: Blog v.1-->
+            <section class="section extra-margins">
+
+                <!--Section heading-->
+                <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Blog listing v.1</h1>
+                <!--Section sescription-->
+                <p class="section-description wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+
+                <!--First row-->
+                <div class="row">
+
+                    <!--First column-->
+                    <div class="col-md-5 m-b-r wow fadeInLeft" data-wow-delay="0.2s">
+                        <!--Featured image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="http://mdbootstrap.com/images/regular/people/img%20(47).jpg">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--/First column-->
+
+                    <!--Second column-->
+                    <div class="col-md-7 m-b-r wow fadeInRight" data-wow-delay="0.2s">
+                        <!--Excerpt-->
+                        <h5 class="red-text "><i class="fa fa-fire "></i>Lifestyle</h5>
+                        <h4>Top 5 cities for romantic weekend for two.</h4>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs tabs-2 success-color" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#panel111" role="tab">Русский</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#panel222" role="tab">English</a>
+    </li>
+
+</ul>
+
+<!-- Tab panels -->
+<div class="tab-content card">
+
+    <!--Panel 1-->
+    <div class="tab-pane fade in active" id="panel111" role="tabpanel">
+        <br>
+
+        <p>Любовь это ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+    </div>
+    <!--/.Panel 1-->
+
+    <!--Panel 2-->
+    <div class="tab-pane fade" id="panel222" role="tabpanel">
+        <br>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+    </div>
+    <!--/.Panel 2-->
+    </div>
+
+                        <p>by <a><strong>Maria Kate</strong></a>, 23.06.2016</p>
+                        <a class="btn btn-primary ">Read more</a>
+                    </div>
+                    <!--/Second column-->
+
+
+                <!--/First row-->
+
+                <hr>
+
+                <!--Second row-->
+                <div class="row">
+
+                    <!--First column-->
+                    <div class="col-md-7 m-b-r wow fadeInLeft" data-wow-delay="0.3s">
+                        <!--Excerpt-->
+                        <h5 class="blue-text "><i class="fa fa-trophy "></i>Sport</h5>
+                        <h4>What you need to know before begin workout.</h4>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs tabs-2 default-color
+" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#panel10" role="tab">Русский</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#panel20" role="tab">English</a>
+    </li>
+
+</ul>
+
+<!-- Tab panels -->
+<div class="tab-content card">
+
+    <!--Panel 1-->
+    <div class="tab-pane fade in active" id="panel10" role="tabpanel">
+        <br>
+
+        <p>Любовь это ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+    </div>
+    <!--/.Panel 1-->
+
+    <!--Panel 2-->
+    <div class="tab-pane fade" id="panel20" role="tabpanel">
+        <br>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+    </div>
+    <!--/.Panel 2-->
+    </div>
+
+                        <p>by <a><strong>John Doe</strong></a>, 22.06.2016</p>
+                        <a class="btn btn-primary ">Read more</a>
+                    </div>
+
+                    <!--/First column-->
+
+                    <!--Second column-->
+                    <div class="col-md-5 m-b-r wow fadeInRight" data-wow-delay="0.3s">
+                        <!--Featured image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="http://mdbootstrap.com/images/regular/people/img%20(48).jpg">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--/Second column-->
+
+                </div>
+                <!--/Second row-->
+
+                <hr>
+
+                <!--Third row-->
+                <div class="row">
+
+                    <!--First column-->
+                    <div class="col-md-5 m-b-r wow fadeInLeft" data-wow-delay="0.4s">
+                        <!--Featured image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="http://mdbootstrap.com/images/regular/people/img%20(49).jpg">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--/First column-->
+
+                    <!--Second column-->
+                    <div class="col-md-7 m-b-r wow fadeInRight" data-wow-delay="0.4s">
+                        <!--Excerpt-->
+                        <h5 class="teal-text "><i class="fa fa-television "></i>Entertainment</h5>
+                        <h4>My best summer adventure - Glastonbury Festival.</h4>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs tabs-2 warning-color" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#panel11" role="tab">Русский</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#panel22" role="tab">English</a>
+    </li>
+
+</ul>
+
+<!-- Tab panels -->
+<div class="tab-content card">
+
+    <!--Panel 1-->
+    <div class="tab-pane fade in active" id="panel11" role="tabpanel">
+        <br>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+    </div>
+    <!--/.Panel 1-->
+
+    <!--Panel 2-->
+    <div class="tab-pane fade" id="panel22" role="tabpanel">
+        <br>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+    </div>
+    <!--/.Panel 2-->
+
+
+</div>
+
+                        <p>by <a><strong>Maria Kate</strong></a>, 21.06.2016</p>
+                        <a class="btn btn-primary ">Read more</a>
+                    </div>
+                    <!--/Second column-->
+
+                </div>
+                <!--/Third row-->
+</div>
+            </section>
+            <!--/Section: Blog v.1-->
+
+            <hr class="between-sections">
+    </div>
+
+</div>
+<!--/.Card-->
+
+
+
+{% endblock %}

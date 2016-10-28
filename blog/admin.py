@@ -11,10 +11,10 @@ admin.site.register(Comment, CommentAdmin)
 
 
 class PostAdmin(AdminVideoMixin, admin.ModelAdmin):
-    list_display = ('title', 'slug', 'image','imageone', 'author', 'publish',
+    list_display = ('title', 'slug', 'image','alt_image','alt_image_dog', 'author', 'publish',
                     'status')
     list_filter = ('status', 'created', 'publish', 'author')
-    search_fields = ('title', 'body','bodyone')
+    search_fields = ('title', 'body','citata','anecdot')
     prepopulated_fields = {'slug': ('title',)}
     raw_id_fields = ('author',)
     date_hierarchy = 'publish'

@@ -23,13 +23,16 @@ class Post(models.Model):
                             unique_for_date='publish')
     image = models.ImageField(upload_to='posts/%Y/%m/%d',
                               blank=True)
-    imageone = models.ImageField(upload_to='posts/%Y/%m/%d',
+    alt_image = models.CharField(max_length=250)
+    image_dog = models.ImageField(upload_to='posts/%Y/%m/%d',
                               blank=True)
+    alt_image_dog = models.CharField(max_length=250)
     video = EmbedVideoField()
     author = models.ForeignKey(User,
                                related_name='blog_posts')
     body = models.TextField()
-    bodyone = models.TextField()
+    citata = models.TextField()
+    anecdot = models.TextField()
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
