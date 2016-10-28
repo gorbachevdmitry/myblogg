@@ -1,5 +1,6 @@
 {% extends "blog/base.html" %}
 {% load blog_tags %}
+{% load static from staticfiles %}
 
 {% block title %}{{ post.title }}{% endblock %}
 
@@ -21,7 +22,7 @@
                 <img src="http://mdbootstrap.com/images/reg/reg%20(35).jpg" class="img-fluid">
             </div>
             <!--Avatar-->
-            <div class="avatar"><img src="http://mdbootstrap.com/wp-content/uploads/2015/10/team-avatar-2.jpg" class="img-circle img-responsive">
+            <div class="avatar"><img src="{% static 'img/myphotos/2016-10-28-144519.jpg' %}" class="img-circle img-responsive">
             </div>
             <!--Content-->
             <div class="card-block">
